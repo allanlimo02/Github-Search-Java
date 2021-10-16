@@ -10,17 +10,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class GitResults extends AppCompatActivity {
-    @BindView(R.id.receive) TextView mReceive;
-
+    @BindView(R.id.username) TextView mUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_git_results);
         ButterKnife.bind(this);
-        Intent intent=new Intent();
+        Intent intent=getIntent();
         String username=intent.getStringExtra("username");
-        mReceive.setText("Hello ");
+        mUsername.setText(username);
 
     }
 }

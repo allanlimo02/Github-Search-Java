@@ -26,17 +26,11 @@ public class MainActivity extends AppCompatActivity {
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username=mUsername.getText().toString();
-                if(username==""){
-                    mSubmit.setEnabled(false);
-                    mError.setText("Wrong Username");
-                } else{
+                    String username=mUsername.getText().toString();
                     Intent intent =new Intent(MainActivity.this,GitResults.class);
-                    startActivity(intent);
                     intent.putExtra("username",username);
                     Toast.makeText(MainActivity.this,"Here we go"+username,Toast.LENGTH_SHORT).show();
-
-                }
+                    startActivity(intent);
 
             }
         });
