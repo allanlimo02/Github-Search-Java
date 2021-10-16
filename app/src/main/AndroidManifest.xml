@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Github">
         <activity
-            android:name=".GitResults"
-            android:exported="true" />
+            android:name=".GitResults">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.moringaschool.github.MainActivity">
+                </meta-data>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
