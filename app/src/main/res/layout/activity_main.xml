@@ -7,29 +7,30 @@
     android:background="@drawable/backround"
     tools:context=".MainActivity">
 
-
     <EditText
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="354dp"
-        android:background="@color/white"
+        android:layout_marginTop="290sp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="33sp"
+        android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="Input your Username"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp" />
 
-
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="132dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="169dp"
+
+        android:layout_marginEnd="138dp"
+        android:background="@drawable/button_backround"
         android:text="Submit" />
 
     <TextView
